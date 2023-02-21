@@ -22,19 +22,18 @@ class Formulas():
     Esto almacena las diferentes fórmulas. Básicamente, admite el nombre de la variable que resuelven,
     y con que variables faltantes funcionan.
     """    
-    def __init__(self, nombre_variable, lista_formulas):
+    def __init__(self, name_variable, list_formulas):
         # Hacemos que los atributos de las instancias de Formulas sean las fórmulas
-        self.nombre = nombre_variable
-        self.VF = lista_formulas["VF"]
-        self.VI = lista_formulas["VI"]
-        self.A = lista_formulas["A"]
-        self.T = lista_formulas["T"]
-        self.X = lista_formulas["X"]
-        self.D = lista_formulas["D"]
-        self.V = lista_formulas["V"]
+        self.nombre = name_variable
+        self.VF = list_formulas["VF"]
+        self.VI = list_formulas["VI"]
+        self.A = list_formulas["A"]
+        self.T = list_formulas["T"]
+        self.D = list_formulas["D"]
+        self.V = list_formulas["V"]
     
-    def kll_me(self, lef):
-        if let == "VF":
+    def call(self, lef):
+        if lef == "VF":
             return self.VF
         elif lef == "VI":
             return self.VI
